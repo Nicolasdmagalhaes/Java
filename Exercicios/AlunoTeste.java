@@ -12,6 +12,7 @@ public class AlunoTeste {
         aluno.setnota3(5.0f);
 
         System.out.println("Nome: " + aluno.getNome());
+        System.out.println("Turma: " + aluno.getTurma());
         System.out.println("Nota1: " + aluno.getnota1());
         System.out.println("Nota2: " + aluno.getnota2());
         System.out.println("Nota3: " + aluno.getnota3());

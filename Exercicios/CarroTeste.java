@@ -11,7 +11,6 @@ public class CarroTeste {
         Carro c2 = new Carro( "ferrari","F50",2026);
         c2.setCor("Vermelha");
         c2.setPreço(10000);
-
         c2.exibirInfo();
         System.out.println("---------------------------");
 

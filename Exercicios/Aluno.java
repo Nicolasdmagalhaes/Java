@@ -9,14 +9,13 @@ public class Aluno {
     private float nota1;
     private float nota2;
     private float nota3;
-    private boolean aprovado;
 
 //Métodos de acesso e modificadores - getters() e setters() | sempre colocar o ; no get antes de fechar a chave
     public String getNome() {return Nome;}
     public void setNome (String Nome) {
         this.Nome = Nome;}
     public String getTurma() {return Turma;}
-    public void setTurma (String turma){
+    public void setTurma (String Turma){
         this.Turma = Turma;}
     public float getnota1() {return nota1;}
     public void setnota1 (float nota1){
@@ -27,12 +26,12 @@ public class Aluno {
     public float getnota3() {return nota3;}
     public void setnota3 (float nota3){
         this.nota3 = nota3;}
-    public boolean isAprovado() {return getMedia() >= 6.0;}
+
     public String getSituacao() {
         if (getMedia() >= 6.0) {
-            return "Aprovado";
+            return "Aprovado!";
         } else {
-            return "Reprovado";
+            return "Reprovado!";
         }
     }public double getMedia() {
         return (nota1 + nota2 + nota3) / 3.0;
