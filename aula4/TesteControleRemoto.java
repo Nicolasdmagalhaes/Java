@@ -14,6 +14,7 @@ public class TesteControleRemoto {
         System.out.println("\n---------------------------------------------\n");
 
         System.out.println("--------teste 1 --------");
+        System.out.println("tv: " + controle.isLigado());
         controle.setVolume(300);
         System.out.println("Volume:" + controle.getVolume());
 
