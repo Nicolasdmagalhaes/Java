@@ -1,21 +1,21 @@
 package aula5;
 
-//sub class de conteudo como a Serie (Herança)
+// 1 . Sub class de Conteudo como a Serie (Herança)
 
 public class Filme extends Conteudo{
 
-    //Atributos
+    // 2 . Atributos
     public boolean indicacaoOscar;
 
 
-    //Construtor
+    // 3 . Construtor Parametrizado
     public Filme(String titulo, String genero, int duracaoMinutos, boolean indicacaoOscar) {
         super(titulo, genero, duracaoMinutos);
         this.indicacaoOscar = indicacaoOscar;
     }
 
 
-    //Getters e Setters
+    // 4 . Getters e Setters
     public boolean isIndicacaoOscar() {
         return indicacaoOscar;
     }
@@ -24,7 +24,7 @@ public class Filme extends Conteudo{
         this.indicacaoOscar = indicacaoOscar;
     }
 
-    // Metodo exibir os dados do filme
+    //5 . Metodo exibir os dados do filme
     public void exibirDetalhes() {
         System.out.println("=== EXIBIR DETALHES DO FILME===");
 

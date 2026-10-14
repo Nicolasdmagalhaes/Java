@@ -1,20 +1,20 @@
 package aula5;
 
-//sub class de conteudo como o filme (Herança)
+// 1 . Sub class de conteudo como o filme (Herança)
 
 public class Serie extends Conteudo{
 
-    //Atributos
+    // 2 . Atributos
     private int totalTemporadas;
 
 
-    //Contrutor
+    // 3 . Contrutor Parametrizado
     public Serie(String titulo, String genero, int duracaoMinutos, int totalTemporadas) {
         super(titulo, genero, duracaoMinutos);
         this.totalTemporadas = totalTemporadas;
     }
 
-    //Getters e Setters
+    // 4 . Getters e Setters
     public int getTotalTemporadas() {
         return totalTemporadas;
     }
@@ -25,7 +25,7 @@ public class Serie extends Conteudo{
             System.out.println("Erro: não foi possivel definir a temporada");
         }
     }
-    //Metodos exibir dados
+    // 5 . Metodos exibir dados
     public void exibirDetalhes(){
         System.out.println("=== EXIBIR DETALHES DA SÈRIE===");
 

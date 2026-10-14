@@ -2,19 +2,19 @@ package aula5;
 
 public class Conteudo {
 
-    //Atributos
+    // 1 . Atributos
     private String titulo;
     private String genero;
     private int duracaoMinutos;
 
-    //Construtor da super classe
+    // 2 . Construtor da super classe
     public Conteudo(String titulo, String genero, int duracaoMinutos) {
         this.titulo = titulo;
         this.genero = genero;
         this.duracaoMinutos = duracaoMinutos;
     }
 
-    //Getters e Setters
+    // 3 . Getters e Setters
     public String getTitulo() {
         return titulo;
     }
@@ -42,7 +42,7 @@ public class Conteudo {
             System.out.println("Erro: o tempo de duracao deve ser positivo");
         }
     }
-    //Metodos comum que ambas as filhas herdarão
+    // 4 . Metodos comum que ambas as filhas herdarão
     public void darPlay(){
         System.out.println("O conteudo " + this.titulo + " está carregando...");
         System.out.println("aeeeeeeee está carregando em 3 min");
