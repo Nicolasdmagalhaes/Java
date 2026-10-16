@@ -2,17 +2,17 @@ package aula6;
 
 public class Notificacao {
 
-    // Atributos
+    // 1. Atributos
     private String destinatario;
     private String mensagem;
 
-    // Cosntrutor
+    // 2. Cosntrutor
     public Notificacao(String destinatario, String mensagem){
         this.destinatario = destinatario;
         this.mensagem = mensagem;
     }
 
-    // Getters e Setters
+    // 3. Getters e Setters
     public String getDestinatario() {
         return destinatario;
     }
@@ -29,7 +29,7 @@ public class Notificacao {
         this.mensagem = mensagem;
     }
 
-    // Comportamento generico que será sobrescrito (Override)
+    // 4. Comportamento generico que será sobrescrito (Override)
     public void enviar() {
         System.out.println("Enviando uma mensagem (generica) para " + this.destinatario);
 
